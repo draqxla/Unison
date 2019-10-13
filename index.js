@@ -24,8 +24,6 @@ const ytdl = require("ytdl-core");
 
 // });
 
-const token = 'NTAwNDI5OTAzMjgwMjA5OTUw.XZ4Iqg.XaEl4SUjmHNMzX4zeCWPSaLhj5M';
-
 const PREFIX = '=';
 
 var version = '1.0.0';
@@ -311,4 +309,4 @@ bot.on('message', message => {
     }
 });
 
-bot.login(token);
+bot.login(process.env.BOT_TOKEN);
